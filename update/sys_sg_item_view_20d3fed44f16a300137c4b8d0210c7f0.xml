@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
+    <sys_sg_item_view action="INSERT_OR_UPDATE">
+        <data_item display_value="Upcoming Gigs">794422d84fd2a300137c4b8d0210c7aa</data_item>
+        <dependency_fields>start_time,end_time,short_description,location</dependency_fields>
+        <item_view_json>{&#13;
+  "Type": "ViewGroup",&#13;
+  "Margin": {&#13;
+    "Top": 16,&#13;
+    "Bottom": 16&#13;
+  },&#13;
+  "Orientation": "Horizontal",&#13;
+  "Alignment": "Center",&#13;
+  "Distribution": "Auto",&#13;
+  "Children": [&#13;
+    {&#13;
+      "Type": "ViewGroup",&#13;
+      "Orientation": "Vertical",&#13;
+      "Alignment": "Left",&#13;
+      "Distribution": "Auto",&#13;
+      "Children": [&#13;
+        {&#13;
+          "Type": "Text",&#13;
+          "Margin": {&#13;
+            "Top": 3&#13;
+          },&#13;
+          "CellId": "start_time",&#13;
+          "TextColor": "#293e40",&#13;
+          "TextAlignment": "Left",&#13;
+          "MaxLines": 1,&#13;
+          "Font": {&#13;
+            "Weight": "regular",&#13;
+            "Size": 12&#13;
+          },&#13;
+          "Width": 60,&#13;
+          "Text": "PLACEHOLDER"&#13;
+        },&#13;
+        {&#13;
+          "Type": "Text",&#13;
+          "Width": 60,&#13;
+          "Margin": {&#13;
+            "Top": 9&#13;
+          },&#13;
+          "Text": "PLACEHOLDER",&#13;
+          "CellId": "end_time",&#13;
+          "TextColor": "#293e40",&#13;
+          "TextAlignment": "Left",&#13;
+          "MaxLines": 1,&#13;
+          "Font": {&#13;
+            "Weight": "regular",&#13;
+            "Size": 12&#13;
+          }&#13;
+        }&#13;
+      ],&#13;
+      "Margin": {},&#13;
+      "Width": 60&#13;
+    },&#13;
+    {&#13;
+      "Type": "Text",&#13;
+      "Margin": {&#13;
+        "Right": 13,&#13;
+        "Left": 8&#13;
+      },&#13;
+      "TextColor": "#ff8c3e",&#13;
+      "TextAlignment": "Left",&#13;
+      "MaxLines": 1,&#13;
+      "Font": {&#13;
+        "Weight": "regular"&#13;
+      },&#13;
+      "CornerRadius": 2,&#13;
+      "BackgroundColor": "#848484",&#13;
+      "Height": 46,&#13;
+      "Width": 3&#13;
+    },&#13;
+    {&#13;
+      "Type": "ViewGroup",&#13;
+      "Orientation": "Vertical",&#13;
+      "Alignment": "Left",&#13;
+      "Distribution": "Auto",&#13;
+      "Children": [&#13;
+        {&#13;
+          "Type": "Text",&#13;
+          "TextColor": "#293e40",&#13;
+          "TextAlignment": "Left",&#13;
+          "MaxLines": 1,&#13;
+          "Font": {&#13;
+            "Weight": "medium",&#13;
+            "Size": 16&#13;
+          },&#13;
+          "CellId": "short_description"&#13;
+        },&#13;
+        {&#13;
+          "Type": "Text",&#13;
+          "TextColor": "#293e40",&#13;
+          "TextAlignment": "Left",&#13;
+          "MaxLines": 1,&#13;
+          "Font": {&#13;
+            "Weight": "medium",&#13;
+            "Size": 16&#13;
+          },&#13;
+          "CellId": "location"&#13;
+        }&#13;
+      ],&#13;
+      "Margin": {}&#13;
+    }&#13;
+  ]&#13;
+}</item_view_json>
+        <name>Calendar Gig View</name>
+        <short_description/>
+        <sys_class_name>sys_sg_item_view</sys_class_name>
+        <sys_created_by>jesse.adams</sys_created_by>
+        <sys_created_on>2018-12-06 22:41:33</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>20d3fed44f16a300137c4b8d0210c7f0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Calendar Gig View</sys_name>
+        <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+        <sys_update_name>sys_sg_item_view_20d3fed44f16a300137c4b8d0210c7f0</sys_update_name>
+        <sys_updated_by>jesse.adams</sys_updated_by>
+        <sys_updated_on>2018-12-06 22:56:58</sys_updated_on>
+        <ui_styles/>
+    </sys_sg_item_view>
+</record_update>

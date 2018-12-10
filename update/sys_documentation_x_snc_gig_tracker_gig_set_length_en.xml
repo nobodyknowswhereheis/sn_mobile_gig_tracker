@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="set_length" label="Set length" language="en" table="x_snc_gig_tracker_gig">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>set_length</element>
+            <help/>
+            <hint/>
+            <label>Set length</label>
+            <language>en</language>
+            <name>x_snc_gig_tracker_gig</name>
+            <plural>Set lengths</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jesse.adams</sys_created_by>
+            <sys_created_on>2018-12-06 16:58:20</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>8d4529544f12a300137c4b8d0210c700</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Set length</sys_name>
+            <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_gig_tracker_gig_set_length_en</sys_update_name>
+            <sys_updated_by>jesse.adams</sys_updated_by>
+            <sys_updated_on>2018-12-06 16:58:20</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

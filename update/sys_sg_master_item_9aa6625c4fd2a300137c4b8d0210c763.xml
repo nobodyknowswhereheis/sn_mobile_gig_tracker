@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_item">
+    <sys_sg_master_item action="INSERT_OR_UPDATE">
+        <condition/>
+        <condition_order/>
+        <item_view display_value="Gig List item view">daa6265c4fd2a300137c4b8d0210c75a</item_view>
+        <name>Master Item</name>
+        <screen display_value="Gig List">d2a6625c4fd2a300137c4b8d0210c74c</screen>
+        <sys_class_name>sys_sg_master_item</sys_class_name>
+        <sys_created_by>jesse.adams</sys_created_by>
+        <sys_created_on>2018-12-06 21:44:03</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9aa6625c4fd2a300137c4b8d0210c763</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Master Item</sys_name>
+        <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+        <sys_update_name>sys_sg_master_item_9aa6625c4fd2a300137c4b8d0210c763</sys_update_name>
+        <sys_updated_by>jesse.adams</sys_updated_by>
+        <sys_updated_on>2018-12-06 21:44:03</sys_updated_on>
+        <table>x_snc_gig_tracker_gig_request</table>
+    </sys_sg_master_item>
+</record_update>

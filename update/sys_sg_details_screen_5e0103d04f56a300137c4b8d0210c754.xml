@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_details_screen">
+    <sys_sg_details_screen action="INSERT_OR_UPDATE">
+        <application_roles/>
+        <available_offline>false</available_offline>
+        <data_item display_value="User Locations">d5700b904f56a300137c4b8d0210c782</data_item>
+        <description/>
+        <fetch_type>not_required</fetch_type>
+        <hidden>false</hidden>
+        <icon display_value="map">a90103d04f56a300137c4b8d0210c72d</icon>
+        <item_view display_value="Where's the band? detail item view">8a0103d04f56a300137c4b8d0210c744</item_view>
+        <name>Details</name>
+        <order>10</order>
+        <parent>8e0103d04f56a300137c4b8d0210c731</parent>
+        <parent_table>sys_sg_map_screen</parent_table>
+        <roles_override/>
+        <sys_class_name>sys_sg_details_screen</sys_class_name>
+        <sys_created_by>jesse.adams</sys_created_by>
+        <sys_created_on>2018-12-06 23:39:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5e0103d04f56a300137c4b8d0210c754</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Details</sys_name>
+        <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+        <sys_update_name>sys_sg_details_screen_5e0103d04f56a300137c4b8d0210c754</sys_update_name>
+        <sys_updated_by>jesse.adams</sys_updated_by>
+        <sys_updated_on>2018-12-06 23:39:17</sys_updated_on>
+    </sys_sg_details_screen>
+</record_update>

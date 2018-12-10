@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_button_instance">
+    <sys_sg_button_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <button display_value="Show Gig on Map">4f89e6dc4fd2a300137c4b8d0210c7b6</button>
+        <description/>
+        <field_name>gig.location</field_name>
+        <label>Gig.Location.Location_field</label>
+        <location>field</location>
+        <name>Gig.Location.Location_field</name>
+        <order>1</order>
+        <parent>96a6625c4fd2a300137c4b8d0210c7e1</parent>
+        <parent_table>sys_sg_details_screen</parent_table>
+        <sys_class_name>sys_sg_button_instance</sys_class_name>
+        <sys_created_by>jesse.adams</sys_created_by>
+        <sys_created_on>2018-12-06 21:58:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3fe9eedc4fd2a300137c4b8d0210c79f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gig.Location.Location_field</sys_name>
+        <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+        <sys_update_name>sys_sg_button_instance_3fe9eedc4fd2a300137c4b8d0210c79f</sys_update_name>
+        <sys_updated_by>jesse.adams</sys_updated_by>
+        <sys_updated_on>2018-12-06 21:58:21</sys_updated_on>
+        <table>x_snc_gig_tracker_gig_request</table>
+    </sys_sg_button_instance>
+</record_update>

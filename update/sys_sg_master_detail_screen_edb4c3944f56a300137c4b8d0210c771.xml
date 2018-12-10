@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_detail_screen">
+    <sys_sg_master_detail_screen action="INSERT_OR_UPDATE">
+        <application_roles/>
+        <available_offline>false</available_offline>
+        <data_item display_value="Requests for Gig">30240f544f56a300137c4b8d0210c766</data_item>
+        <description/>
+        <fetch_type>not_required</fetch_type>
+        <hidden>true</hidden>
+        <icon display_value="file-alt">85b403944f56a300137c4b8d0210c79b</icon>
+        <name>Requests for Gig</name>
+        <order>30</order>
+        <parent>c6d122584fd2a300137c4b8d0210c788</parent>
+        <parent_table>sys_sg_folder</parent_table>
+        <roles_override/>
+        <sys_class_name>sys_sg_master_detail_screen</sys_class_name>
+        <sys_created_by>jesse.adams</sys_created_by>
+        <sys_created_on>2018-12-06 23:55:20</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>edb4c3944f56a300137c4b8d0210c771</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Requests for Gig</sys_name>
+        <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+        <sys_update_name>sys_sg_master_detail_screen_edb4c3944f56a300137c4b8d0210c771</sys_update_name>
+        <sys_updated_by>jesse.adams</sys_updated_by>
+        <sys_updated_on>2018-12-07 00:50:00</sys_updated_on>
+    </sys_sg_master_detail_screen>
+</record_update>

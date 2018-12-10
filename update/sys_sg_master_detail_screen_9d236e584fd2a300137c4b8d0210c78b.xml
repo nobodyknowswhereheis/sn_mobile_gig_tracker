@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_master_detail_screen">
+    <sys_sg_master_detail_screen action="INSERT_OR_UPDATE">
+        <application_roles/>
+        <available_offline>false</available_offline>
+        <data_item display_value="Band Members">e0a26a584fd2a300137c4b8d0210c7a5</data_item>
+        <description/>
+        <fetch_type>not_required</fetch_type>
+        <hidden>false</hidden>
+        <icon display_value="user">09236e584fd2a300137c4b8d0210c710</icon>
+        <name>Members</name>
+        <order>10</order>
+        <parent>d7e162584fd2a300137c4b8d0210c749</parent>
+        <parent_table>sys_sg_folder</parent_table>
+        <roles_override/>
+        <sys_class_name>sys_sg_master_detail_screen</sys_class_name>
+        <sys_created_by>jesse.adams</sys_created_by>
+        <sys_created_on>2018-12-06 21:28:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9d236e584fd2a300137c4b8d0210c78b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Members</sys_name>
+        <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+        <sys_update_name>sys_sg_master_detail_screen_9d236e584fd2a300137c4b8d0210c78b</sys_update_name>
+        <sys_updated_by>jesse.adams</sys_updated_by>
+        <sys_updated_on>2018-12-06 21:28:42</sys_updated_on>
+    </sys_sg_master_detail_screen>
+</record_update>

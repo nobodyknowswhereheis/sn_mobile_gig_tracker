@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Gig Request" max_length="40" name="x_snc_gig_tracker_gig_request" type="collection">
+        <element label="Gig" max_length="32" name="gig" reference="x_snc_gig_tracker_gig" type="reference"/>
+        <element label="Instrument" max_length="4000" name="instrument" reference="x_snc_gig_tracker_instrument" type="glide_list"/>
+        <element label="Member" max_length="32" name="member" reference="sys_user" type="reference"/>
+        <element choice="3" default="1" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Confirmed" value="2"/>
+                <element inactive_on_update="false" label="Declined" value="3"/>
+                <element inactive_on_update="false" label="Requested" value="1"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="gig"/>
+        </index>
+        <index name="index2">
+            <element name="member"/>
+        </index>
+    </element>
+</database>

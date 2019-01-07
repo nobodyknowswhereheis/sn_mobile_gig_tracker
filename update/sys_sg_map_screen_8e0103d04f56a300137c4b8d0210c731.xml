@@ -4,10 +4,10 @@
         <available_offline>false</available_offline>
         <data_item display_value="User Locations">d5700b904f56a300137c4b8d0210c782</data_item>
         <data_item_table>sys_user_geo_location</data_item_table>
-        <description/>
+        <description>Bass player running late again? Is he really stuck in traffic or still at home?</description>
         <fetch_type>not_required</fetch_type>
         <hidden>false</hidden>
-        <icon display_value="map">a90103d04f56a300137c4b8d0210c72d</icon>
+        <icon display_value="map">92e647a2db7e2300f51ef3c61d961911</icon>
         <info>sys_user.email</info>
         <location>sys_user.location</location>
         <name>Where's the band?</name>
@@ -22,17 +22,15 @@
         <sys_class_name>sys_sg_map_screen</sys_class_name>
         <sys_created_by>jesse.adams</sys_created_by>
         <sys_created_on>2018-12-06 23:39:17</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>8e0103d04f56a300137c4b8d0210c731</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Where's the band?</sys_name>
         <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
         <sys_update_name>sys_sg_map_screen_8e0103d04f56a300137c4b8d0210c731</sys_update_name>
         <sys_updated_by>jesse.adams</sys_updated_by>
-        <sys_updated_on>2018-12-06 23:39:17</sys_updated_on>
+        <sys_updated_on>2019-01-07 20:22:40</sys_updated_on>
         <tag>sys_user.geolocation_tracked</tag>
         <tag_background_color>#7d8a8c</tag_background_color>
         <tag_font_color>#ffffff</tag_font_color>

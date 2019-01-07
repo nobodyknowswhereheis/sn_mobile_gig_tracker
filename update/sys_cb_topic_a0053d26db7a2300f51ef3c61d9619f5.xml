@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <connect_queue/>
+        <description>Get details about upcoming gigs</description>
+        <graph>{
+  "graph_api_version": "1.0.10",
+  "goals": {
+    "395d0e8aa144436fae5415b45966ecf5": {
+      "id": "395d0e8aa144436fae5415b45966ecf5",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "0af52ead8e224343a1606d95078bcd57": {
+          "id": "0af52ead8e224343a1606d95078bcd57",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "402c3ab99b7d4aee9e077702d5e3ee40": {
+          "id": "402c3ab99b7d4aee9e077702d5e3ee40",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "d66c0dac3421411ab67459aca36f8f22": {
+          "id": "d66c0dac3421411ab67459aca36f8f22",
+          "stepType": "LookupRecord",
+          "name": "Lookup Gigs",
+          "condition": {
+            "mode": "glide_scripted_query",
+            "value": "(function execute() {\n    var options = \"123456\";\n\n    // get variables\n    var index = parseInt(vaVars.index);\n    var limit = parseInt(vaVars.limit);\n    \n    var now = new GlideDateTime();\n    \n    var gr = new GlideRecordSecure('x_snc_gig_tracker_gig');\n    gr.addQuery(\"call_time\",\"&gt;=\",now);\n    gr.orderBy(\"call_time\"); \n    gr.chooseWindow(index, index + limit, true);\n\n    gr.query();  \n\n    // if there are more records to fetch...\n    if ( vaVars.count &gt; index + limit) {\n        vaVars.more = true;\n    }\n    else\n        vaVars.more = false;\n        \n    while(gr.next()) {\n        return gr;\n    }\n\n    return options;\n})();\n\n"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "ae4d315d70f541fc9775bbee2edbb5fc"
+        },
+        "733fe469878040b7aab14c001a897be5": {
+          "id": "733fe469878040b7aab14c001a897be5",
+          "stepType": "Decision",
+          "name": "Show next?"
+        },
+        "b0f41050b5674185a92ce2df2c08be06": {
+          "id": "b0f41050b5674185a92ce2df2c08be06",
+          "name": "Go to Next Page",
+          "script": "(function execute() {\n    vaVars.index ++;\n        return '';\n    })();\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "7b893336f6744e0e9af17525ed7a7b1f": {
+          "id": "7b893336f6744e0e9af17525ed7a7b1f",
+          "stepType": "RecordOutput",
+          "name": "Show Gig Info",
+          "variableId": "ae4d315d70f541fc9775bbee2edbb5fc",
+          "mode": "script",
+          "tableName": "x_snc_gig_tracker_gig",
+          "fields": [
+            "short_description",
+            "location",
+            "call_time"
+          ],
+          "applicability": {
+            "value": "lookup_gigsISNOTEMPTY",
+            "mode": "query"
+          },
+          "condition": {
+            "mode": "glide_scripted_query",
+            "value": "(function execute(table) {\n        var gr = new GlideRecord(table);\n        gr.get(vaInputs.lookup_gigs);\n        if(gr) {\n            return gr;\n        }\n    })(table);\n"
+          }
+        },
+        "a03c471a0249485fbeb6b15270e940de": {
+          "id": "a03c471a0249485fbeb6b15270e940de",
+          "stepType": "TextOutput",
+          "name": "give count feedback",
+          "value": {
+            "value": "(function execute() {\n    /* Return a quoted string.  For example:\n\n       var result;\n       if (vaInputs.first_name == 'Bill') {\n           return gs.getMessage('hi there {0}', [vaInputs.first_name]);\n       } else {\n           return gs.getMessage('how are you {0}', [vaInputs.last_name]);\n       }\n    */\n    return 'I found '+vaVars.count + \" gigs coming up\";\n})()\n",
+            "mode": "script"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "3f581952a01d49d9b053ce720853923e": {
+          "id": "3f581952a01d49d9b053ce720853923e",
+          "name": "get count",
+          "script": "(function execute() {\n    var now = new GlideDateTime();\n    var gr = new GlideRecordSecure('x_snc_gig_tracker_gig');\n    gr.addQuery(\"call_time\",\"&gt;=\",now);\n    gr.orderBy(\"call_time\"); \n    gr.query();  \n\n    // get total count, used for pagination\n    count = gr.getRowCount();\n    vaVars.count = count;\n})()\n",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "24556edb54254e0ea57ffa798d66dda0",
+          "edgeType": "Branch",
+          "source": "733fe469878040b7aab14c001a897be5",
+          "target": "402c3ab99b7d4aee9e077702d5e3ee40",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    var keep_on_going = vaVars.more == true ? false : true\n    return keep_on_going;\n})()\n"
+          },
+          "label": "Done"
+        },
+        {
+          "id": "d65ea04cbbad4fcb83c422bc1a6e834d",
+          "edgeType": "Edge",
+          "source": "7b893336f6744e0e9af17525ed7a7b1f",
+          "target": "733fe469878040b7aab14c001a897be5",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "cc90f4f3f5ac4715a2faa0c8fbe5450a",
+          "edgeType": "Edge",
+          "source": "d66c0dac3421411ab67459aca36f8f22",
+          "target": "7b893336f6744e0e9af17525ed7a7b1f",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "100367f17bef48babc21a892b570e557",
+          "edgeType": "Branch",
+          "source": "733fe469878040b7aab14c001a897be5",
+          "target": "b0f41050b5674185a92ce2df2c08be06",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "script",
+            "value": "(function execute() {\n    /* Return true or false to indicate the branch condition's applicability.\n       For example:\n\n       var applies = vaInputs.first_name == 'Bill' ? true : false;\n       return applies;\n    */\n    var keep_on_going = vaVars.more == true ? true : false\n    return keep_on_going;\n})()\n"
+          },
+          "label": "has next?"
+        },
+        {
+          "id": "6e74a375a95c452d9f4132ae960bcd3b",
+          "edgeType": "Edge",
+          "source": "b0f41050b5674185a92ce2df2c08be06",
+          "target": "d66c0dac3421411ab67459aca36f8f22",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "97db5a96e824442d967e5d70be60a9f1",
+          "edgeType": "Edge",
+          "source": "a03c471a0249485fbeb6b15270e940de",
+          "target": "d66c0dac3421411ab67459aca36f8f22",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "306c1ae6bbcb4f89a30977b9c6190636",
+          "edgeType": "Edge",
+          "source": "0af52ead8e224343a1606d95078bcd57",
+          "target": "3f581952a01d49d9b053ce720853923e",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "61a146b4f96a4b7688bd7ed15c7bb972",
+          "edgeType": "Edge",
+          "source": "3f581952a01d49d9b053ce720853923e",
+          "target": "a03c471a0249485fbeb6b15270e940de",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "ae4d315d70f541fc9775bbee2edbb5fc": {
+      "id": "ae4d315d70f541fc9775bbee2edbb5fc",
+      "name": "lookup_gigs",
+      "label": "Lookup Gigs",
+      "varType": "reference",
+      "table": "x_snc_gig_tracker_gig",
+      "category": "vaInputs"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "ccf2886d97994ea6876535011573f9d1": {
+      "id": "ccf2886d97994ea6876535011573f9d1",
+      "value": {
+        "mode": "simple",
+        "value": "false"
+      },
+      "name": "more",
+      "label": "more",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "bb79127516d94f008bae4b3f3413c307": {
+      "id": "bb79127516d94f008bae4b3f3413c307",
+      "value": {
+        "mode": "simple",
+        "value": "1"
+      },
+      "name": "limit",
+      "label": "limit",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "097714f409064741ab0e62341639b9c0": {
+      "id": "097714f409064741ab0e62341639b9c0",
+      "value": {
+        "mode": "simple",
+        "value": "0"
+      },
+      "name": "index",
+      "label": "index",
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "c2b37c0356b94917abf7c703c64e6093": {
+      "id": "c2b37c0356b94917abf7c703c64e6093",
+      "value": {
+        "mode": "simple",
+        "value": "0"
+      },
+      "name": "count",
+      "label": "count",
+      "varType": "script",
+      "category": "vaVars"
+    }
+  }
+}</graph>
+        <key_phrases>Upcoming Gigs,this week</key_phrases>
+        <live_agent>false</live_agent>
+        <name>Upcoming Gigs</name>
+        <roles/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>jesse.adams</sys_created_by>
+        <sys_created_on>2019-01-07 14:24:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a0053d26db7a2300f51ef3c61d9619f5</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>Upcoming Gigs</sys_name>
+        <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+        <sys_update_name>sys_cb_topic_a0053d26db7a2300f51ef3c61d9619f5</sys_update_name>
+        <sys_updated_by>jesse.adams</sys_updated_by>
+        <sys_updated_on>2019-01-07 18:39:03</sys_updated_on>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=a0053d26db7a2300f51ef3c61d9619f5"/>
+</record_update>

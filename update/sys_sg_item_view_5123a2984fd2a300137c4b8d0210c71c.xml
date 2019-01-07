@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_sg_item_view">
     <sys_sg_item_view action="INSERT_OR_UPDATE">
         <data_item display_value="Band Members">e0a26a584fd2a300137c4b8d0210c7a5</data_item>
-        <dependency_fields>avatar,name,title,mobile_phone</dependency_fields>
-        <item_view_json>{"Type":"ViewGroup","Margin":{"Top":14,"Bottom":16},"Orientation":"Horizontal","Alignment":"Top","Distribution":"Auto","Children":[{"Type":"Image","CornerRadius":24,"Height":48,"Width":48,"Margin":{"Right":16},"studio_template_field_id":"E1","Scaling":"Fill","CellId":"avatar"},{"Type":"ViewGroup","Margin":{},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Children":[{"Type":"Text","studio_template_field_id":"E2","TextColor":"#293e40","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"medium","Size":18},"CellId":"name"},{"Type":"Text","Margin":{"Top":4},"studio_template_field_id":"E3","TextColor":"#293e40","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":14},"CellId":"title"},{"Type":"Text","Margin":{"Top":5},"studio_template_field_id":"E4","TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"CellId":"mobile_phone"}]}],"studio_card_id":"6a08b23023052300a8ed7f4fc7bf6558"}</item_view_json>
+        <dependency_fields>user.avatar,user.name,user.title,user.mobile_phone</dependency_fields>
+        <item_view_json>{"Type":"ViewGroup","Margin":{"Top":14,"Bottom":16},"Orientation":"Horizontal","Alignment":"Top","Distribution":"Auto","Children":[{"Type":"Image","CornerRadius":24,"Height":48,"Width":48,"Margin":{"Right":16},"studio_template_field_id":"E1","Scaling":"Fill","CellId":"user.avatar"},{"Type":"ViewGroup","Margin":{},"Orientation":"Vertical","Alignment":"Left","Distribution":"Auto","Children":[{"Type":"Text","studio_template_field_id":"E2","TextColor":"#293e40","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"medium","Size":18},"CellId":"user.name"},{"Type":"Text","Margin":{"Top":4},"studio_template_field_id":"E3","TextColor":"#293e40","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":14},"CellId":"user.title"},{"Type":"Text","Margin":{"Top":5},"studio_template_field_id":"E4","TextColor":"#7d8a8c","TextAlignment":"Left","MaxLines":1,"Font":{"Weight":"regular","Size":13},"CellId":"user.mobile_phone"}]}],"studio_card_id":"6a08b23023052300a8ed7f4fc7bf6558"}</item_view_json>
         <name>Members item view</name>
         <short_description/>
         <sys_class_name>sys_sg_item_view</sys_class_name>
         <sys_created_by>jesse.adams</sys_created_by>
         <sys_created_on>2018-12-06 21:28:41</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>5123a2984fd2a300137c4b8d0210c71c</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Members item view</sys_name>
         <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
         <sys_update_name>sys_sg_item_view_5123a2984fd2a300137c4b8d0210c71c</sys_update_name>
         <sys_updated_by>jesse.adams</sys_updated_by>
-        <sys_updated_on>2018-12-06 22:32:09</sys_updated_on>
+        <sys_updated_on>2018-12-13 15:15:27</sys_updated_on>
         <ui_styles/>
     </sys_sg_item_view>
 </record_update>

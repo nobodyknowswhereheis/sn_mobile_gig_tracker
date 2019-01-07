@@ -4,23 +4,21 @@
         <description/>
         <group_by/>
         <name>Band Members</name>
-        <query_condition table="sys_user">company=7fe1b59c4f12a300137c4b8d0210c732<item display_table="core_company" display_value="Johnny Dee &amp; The Starlights" endquery="false" field="company" goto="false" newquery="false" operator="=" or="false" value="7fe1b59c4f12a300137c4b8d0210c732"/>
+        <query_condition table="sys_user_grmember">group=8402a19adbde2300f51ef3c61d9619b6<item display_table="sys_user_group" display_value="Johnny Dee &amp; The Starlights" endquery="false" field="group" goto="false" newquery="false" operator="=" or="false" value="8402a19adbde2300f51ef3c61d9619b6"/>
         </query_condition>
         <query_condition_script/>
         <sys_class_name>sys_sg_data_item</sys_class_name>
         <sys_created_by>jesse.adams</sys_created_by>
         <sys_created_on>2018-12-06 21:26:28</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>e0a26a584fd2a300137c4b8d0210c7a5</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Band Members</sys_name>
         <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
         <sys_update_name>sys_sg_data_item_e0a26a584fd2a300137c4b8d0210c7a5</sys_update_name>
         <sys_updated_by>jesse.adams</sys_updated_by>
-        <sys_updated_on>2018-12-06 22:30:45</sys_updated_on>
-        <table>sys_user</table>
+        <sys_updated_on>2018-12-13 15:12:53</sys_updated_on>
+        <table>sys_user_grmember</table>
     </sys_sg_data_item>
 </record_update>

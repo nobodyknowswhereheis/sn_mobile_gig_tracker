@@ -190,16 +190,14 @@
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>jesse.adams</sys_created_by>
             <sys_created_on>2018-12-06 17:02:29</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
             <sys_domain>09ff3d105f231000b12e3572f2b4775d</sys_domain>
-            <sys_domain_path>!!!/!!#/!!!/</sys_domain_path>
+            <sys_domain_path/>
             <sys_id>ed3661944f12a300137c4b8d0210c7e5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_snc_gig_tracker_gig</sys_name>
             <sys_overrides/>
             <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
             <sys_policy/>
-            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
             <sys_update_name>sys_ui_section_ed3661944f12a300137c4b8d0210c7e5</sys_update_name>
             <sys_updated_by>jesse.adams</sys_updated_by>

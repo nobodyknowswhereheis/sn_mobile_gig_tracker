@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="_PRVW__912679662b7a230038b4c55991579c82">9d267966db7a2300f51ef3c61d961982</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"cb2cfbcd6a8442e78c1ee6508eb72692","triggerType":"request","id":"cb2cfbcd6a8442e78c1ee6508eb72692"}],"goals":[{"name":"primary","trigger_id":"cb2cfbcd6a8442e78c1ee6508eb72692","nodes":[{"type":"StartGoal","goal_id":"395d0e8aa144436fae5415b45966ecf5","greeting_msg":{"type":"String","mode":"string","value":""},"id":"0af52ead8e224343a1606d95078bcd57","name":"Start"},{"type":"TerminateGoal","goal_id":"395d0e8aa144436fae5415b45966ecf5","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"402c3ab99b7d4aee9e077702d5e3ee40","name":"End"},{"type":"CRUDAction","mode":"read","read_mode":"variable","query":"call_time&gt;=javascript:gs.beginningOfToday()","variable_id":"ae4d315d70f541fc9775bbee2edbb5fc","id":"d66c0dac3421411ab67459aca36f8f22","name":"Lookup Gigs","goal_id":"395d0e8aa144436fae5415b45966ecf5","condition":{"type":"Condition","mode":"glide_query","value":"call_time&gt;=javascript:gs.beginningOfToday()"}},{"type":"RecordOutputPrompt","mode":"variable","table":"x_snc_gig_tracker_gig","variable_id":"ae4d315d70f541fc9775bbee2edbb5fc","fields":["short_description","call_time","location"],"id":"9214db00a95e40ddbf6b859e0d977b63","name":"Gig List","goal_id":"395d0e8aa144436fae5415b45966ecf5","condition":{"type":"Condition","mode":"variable","value":""}}],"edges":[{"type":"Edge","source_node_id":"0af52ead8e224343a1606d95078bcd57","target_node_id":"d66c0dac3421411ab67459aca36f8f22","id":"306c1ae6bbcb4f89a30977b9c6190636"},{"type":"Edge","source_node_id":"d66c0dac3421411ab67459aca36f8f22","target_node_id":"9214db00a95e40ddbf6b859e0d977b63","id":"cc90f4f3f5ac4715a2faa0c8fbe5450a"},{"type":"Edge","source_node_id":"9214db00a95e40ddbf6b859e0d977b63","target_node_id":"402c3ab99b7d4aee9e077702d5e3ee40","id":"7acc6eac483845fca42a93948b795b71"}],"id":"395d0e8aa144436fae5415b45966ecf5"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"x_snc_gig_tracker_gig","id":"ae4d315d70f541fc9775bbee2edbb5fc","name":"lookup_gigs"},{"type":"Reference","table":"sys_user","id":"current-user","name":"user"}],"roles":[],"scope":"c55fd1504f12a300137c4b8d0210c7d0","id":"a0053d26db7a2300f51ef3c61d9619f5","name":"_PRVW__912679662b7a230038b4c55991579c82","key_phrases":["Upcoming Gigs"]}</design_definition>
+        <design_topic_id>a0053d26db7a2300f51ef3c61d9619f5</design_topic_id>
+        <name>_PRVW__912679662b7a230038b4c55991579c82</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>jesse.adams</sys_created_by>
+        <sys_created_on>2019-01-07 14:29:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d1267966db7a2300f51ef3c61d961985</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+        <sys_update_name>sys_cb_design_topic_d1267966db7a2300f51ef3c61d961985</sys_update_name>
+        <sys_updated_by>jesse.adams</sys_updated_by>
+        <sys_updated_on>2019-01-07 14:29:49</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

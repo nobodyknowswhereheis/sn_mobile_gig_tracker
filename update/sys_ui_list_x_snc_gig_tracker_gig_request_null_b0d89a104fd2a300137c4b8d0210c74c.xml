@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="09ff3d105f231000b12e3572f2b4775d" table="x_snc_gig_tracker_gig_request" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>gig</element>
+            <list_id display_value="x_snc_gig_tracker_gig_request" element="NULL" name="x_snc_gig_tracker_gig_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">415792a9dbfa2300f51ef3c61d9619f0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>jesse.adams</sys_created_by>
+            <sys_created_on>2019-01-04 14:20:52</sys_created_on>
+            <sys_id>0d5792a9dbfa2300f51ef3c61d9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jesse.adams</sys_updated_by>
+            <sys_updated_on>2019-01-04 14:20:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>instrument</element>
+            <list_id display_value="x_snc_gig_tracker_gig_request" element="NULL" name="x_snc_gig_tracker_gig_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">415792a9dbfa2300f51ef3c61d9619f0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>jesse.adams</sys_created_by>
+            <sys_created_on>2019-01-04 14:20:52</sys_created_on>
+            <sys_id>8d5792a9dbfa2300f51ef3c61d9619f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jesse.adams</sys_updated_by>
+            <sys_updated_on>2019-01-04 14:20:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>member</element>
+            <list_id display_value="x_snc_gig_tracker_gig_request" element="NULL" name="x_snc_gig_tracker_gig_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">415792a9dbfa2300f51ef3c61d9619f0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>jesse.adams</sys_created_by>
+            <sys_created_on>2019-01-04 14:20:52</sys_created_on>
+            <sys_id>015792a9dbfa2300f51ef3c61d9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jesse.adams</sys_updated_by>
+            <sys_updated_on>2019-01-04 14:20:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>status</element>
+            <list_id display_value="x_snc_gig_tracker_gig_request" element="NULL" name="x_snc_gig_tracker_gig_request" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">415792a9dbfa2300f51ef3c61d9619f0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>jesse.adams</sys_created_by>
+            <sys_created_on>2019-01-04 14:20:52</sys_created_on>
+            <sys_id>815792a9dbfa2300f51ef3c61d9619f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>jesse.adams</sys_updated_by>
+            <sys_updated_on>2019-01-04 14:20:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_gig_tracker_gig_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>jesse.adams</sys_created_by>
+            <sys_created_on>2018-12-06 20:43:36</sys_created_on>
+            <sys_domain>09ff3d105f231000b12e3572f2b4775d</sys_domain>
+            <sys_domain_path/>
+            <sys_id>b0d89a104fd2a300137c4b8d0210c74c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_gig_tracker_gig_request</sys_name>
+            <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_gig_tracker_gig_request_null_b0d89a104fd2a300137c4b8d0210c74c</sys_update_name>
+            <sys_updated_by>jesse.adams</sys_updated_by>
+            <sys_updated_on>2018-12-06 20:43:36</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

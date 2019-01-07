@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Gig Request" max_length="40" name="x_snc_gig_tracker_gig_request" type="collection">
         <element label="Gig" max_length="32" name="gig" reference="x_snc_gig_tracker_gig" type="reference"/>
-        <element label="Instrument" max_length="4000" name="instrument" reference="x_snc_gig_tracker_instrument" type="glide_list"/>
+        <element label="Instrument" max_length="4000" name="instrument" reference="cmn_skill" type="glide_list"/>
         <element label="Member" max_length="32" name="member" reference="sys_user" type="reference"/>
         <element choice="3" default="1" label="Status" max_length="40" name="status" type="string">
             <choice>

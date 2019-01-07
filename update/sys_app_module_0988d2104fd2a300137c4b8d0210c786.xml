@@ -19,21 +19,17 @@
         <query/>
         <report/>
         <roles>x_snc_gig_tracker.instrument_user</roles>
-        <survey/>
-        <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>jesse.adams</sys_created_by>
         <sys_created_on>2018-12-06 20:42:16</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>09ff3d105f231000b12e3572f2b4775d</sys_domain>
-        <sys_domain_path>!!!/!!#/!!!/</sys_domain_path>
+        <sys_domain_path/>
         <sys_id>0988d2104fd2a300137c4b8d0210c786</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Instruments</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
         <sys_update_name>sys_app_module_0988d2104fd2a300137c4b8d0210c786</sys_update_name>
         <sys_updated_by>jesse.adams</sys_updated_by>

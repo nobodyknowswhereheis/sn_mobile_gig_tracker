@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="user" label="User" language="en" table="var__m_topic_variable_a0053d26db7a2300f51ef3c61d9619f5">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <help/>
+            <hint/>
+            <label>User</label>
+            <language>en</language>
+            <name>var__m_topic_variable_a0053d26db7a2300f51ef3c61d9619f5</name>
+            <plural>User</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jesse.adams</sys_created_by>
+            <sys_created_on>2019-01-07 14:24:51</sys_created_on>
+            <sys_id>3c057d26db7a2300f51ef3c61d961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User</sys_name>
+            <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
+            <sys_update_name>sys_documentation_var__m_topic_variable_a0053d26db7a2300f51ef3c61d9619f5_user_en</sys_update_name>
+            <sys_updated_by>jesse.adams</sys_updated_by>
+            <sys_updated_on>2019-01-07 14:24:51</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -8,13 +8,11 @@
         <sys_class_name>sys_sg_screen_field</sys_class_name>
         <sys_created_by>jesse.adams</sys_created_by>
         <sys_created_on>2018-12-06 21:58:25</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>78f922104f16a300137c4b8d0210c7e8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>instrument</sys_name>
         <sys_package display_value="Gig Tracker" source="x_snc_gig_tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Gig Tracker">c55fd1504f12a300137c4b8d0210c7d0</sys_scope>
         <sys_update_name>sys_sg_screen_field_78f922104f16a300137c4b8d0210c7e8</sys_update_name>
         <sys_updated_by>jesse.adams</sys_updated_by>
